@@ -7,20 +7,23 @@ body
 *
     box-sizing: border-box
     font-family: 'Roboto'
-    line-height: 1.6
+    line-height: 1.5
 
 ul 
     list-style: none
 h1, h2, h3, h4, h5
+    font-family: 'Roboto'
     color: $corPrimaria
 nav
     width: 100%
     box-shadow: 0 4px 5px #e0e0e0
-    margin-bottom: 20px
     background: linear-gradient(to right, #37d15b, #b4ffb4)
     .brand
         margin-right: auto
         padding-top: 20px
+        a
+            img
+                width: 150px
     ul
         margin: 0
         display: flex
@@ -35,6 +38,7 @@ nav
                 font-size: 13pt
                 text-decoration: none
                 color: $corPrimaria
+                text-transform: uppercase
             a:hover
                 text-decoration: underline
             
@@ -49,6 +53,9 @@ nav
 
         .dropdown:hover
             display: block
+
+.corpo *
+    font-family: 'helvetica'
 
 .container
     margin-left: 5%
@@ -87,6 +94,41 @@ nav
     
     .item-body
         padding: 25px
+.form-contato
+    width: 70%
+    margin: auto
+input,
+textarea,
+select
+    display: block
+    border-top: 0
+    border-bottom: 2px solid #cecece
+    border-right: 0
+    border-left: 0
+    padding: 15px 5px 5px 5px
+    width: 100%
+    margin-bottom: 20px
+    outline: 0
+
+input:focus, textarea:focus, select:focus
+    transition: 1s linear
+    border-bottom: 2px solid $corPrimaria
+
+.btn
+    border: 0
+    background-color: $corPrimaria
+    color: white
+    border-radius: 5px
+    font-weight: bold
+    text-transform: uppercase
+    padding: 10px 25px
+    cursor: pointer
+
+.btn:hover
+    background-color: $corSecundaria
+    color: black
+
+
 
 .rodape
     margin-top: 50px
@@ -118,9 +160,31 @@ nav
     text-align: center
     color: $corPrimaria
     font-size: 14pt
+    
+.text-justify
+    text-align: justify
+
+.text-white
+    color: white
+
+.text-default
+    color: black
 
 .align-center
     justify-content: center
+
+
+.imagem-principal
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    text-shadow: 2px 2px $corSecundaria
+    background-repeat: no-repeat
+    background-attachment: fixed 
+    background-size: cover
+    height: 450px
+    width: 100%
 
 .shadow 
     box-shadow: 0 0 5px #cecece

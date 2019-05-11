@@ -7,7 +7,7 @@ body {
 * {
   box-sizing: border-box;
   font-family: "Roboto";
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 ul {
@@ -15,18 +15,21 @@ ul {
 }
 
 h1, h2, h3, h4, h5 {
+  font-family: "Roboto";
   color: #006600;
 }
 
 nav {
   width: 100%;
   box-shadow: 0 4px 5px #e0e0e0;
-  margin-bottom: 20px;
   background: linear-gradient(to right, #37d15b, #b4ffb4);
 }
 nav .brand {
   margin-right: auto;
   padding-top: 20px;
+}
+nav .brand a img {
+  width: 150px;
 }
 nav ul {
   margin: 0;
@@ -43,6 +46,7 @@ nav ul li a {
   font-size: 13pt;
   text-decoration: none;
   color: #006600;
+  text-transform: uppercase;
 }
 nav ul li a:hover {
   text-decoration: underline;
@@ -58,6 +62,10 @@ nav ul .dropdown {
 }
 nav ul .dropdown:hover {
   display: block;
+}
+
+.corpo * {
+  font-family: "helvetica";
 }
 
 .container {
@@ -103,6 +111,46 @@ nav ul .dropdown:hover {
   padding: 25px;
 }
 
+.form-contato {
+  width: 70%;
+  margin: auto;
+}
+
+input,
+textarea,
+select {
+  display: block;
+  border-top: 0;
+  border-bottom: 2px solid #cecece;
+  border-right: 0;
+  border-left: 0;
+  padding: 15px 5px 5px 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  outline: 0;
+}
+
+input:focus, textarea:focus, select:focus {
+  transition: 1s linear;
+  border-bottom: 2px solid #006600;
+}
+
+.btn {
+  border: 0;
+  background-color: #006600;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #b4ffb4;
+  color: black;
+}
+
 .rodape {
   margin-top: 50px;
   padding: 50px;
@@ -143,8 +191,33 @@ nav ul .dropdown:hover {
   font-size: 14pt;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-default {
+  color: black;
+}
+
 .align-center {
   justify-content: center;
+}
+
+.imagem-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 2px 2px #b4ffb4;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 450px;
+  width: 100%;
 }
 
 .shadow {
