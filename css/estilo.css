@@ -6,7 +6,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: "helvetica";
   line-height: 1.5;
 }
 
@@ -45,6 +45,7 @@ nav ul li {
 nav ul li a {
   font-size: 13pt;
   text-decoration: none;
+  font-family: "Roboto";
   color: #006600;
   text-transform: uppercase;
 }
@@ -69,8 +70,8 @@ nav ul .dropdown:hover {
 }
 
 .container {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 13%;
+  margin-right: 13%;
 }
 
 .item-galeria {
@@ -153,11 +154,28 @@ input:focus, textarea:focus, select:focus {
 
 .rodape {
   margin-top: 50px;
-  padding: 50px;
+  padding: 25px;
+  padding-bottom: 40px;
+  z-index: 1;
+}
+
+.fim {
+  padding: 5px 25px;
+  z-index: 2;
+  text-align: center;
 }
 
 .m-1 {
   margin: 20px;
+}
+
+.mt-2 {
+  margin-top: 30px;
+}
+
+.my-2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .p-1 {
@@ -166,7 +184,6 @@ input:focus, textarea:focus, select:focus {
 
 .flex {
   display: flex;
-  width: 100%;
 }
 
 .f-row {
@@ -205,6 +222,7 @@ input:focus, textarea:focus, select:focus {
 
 .align-center {
   justify-content: center;
+  align-items: center;
 }
 
 .imagem-principal {
@@ -212,9 +230,9 @@ input:focus, textarea:focus, select:focus {
   align-items: center;
   justify-content: center;
   text-align: center;
-  text-shadow: 2px 2px #b4ffb4;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   height: 450px;
   width: 100%;
