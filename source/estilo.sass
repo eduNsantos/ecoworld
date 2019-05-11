@@ -7,11 +7,11 @@ body
 *
     box-sizing: border-box
     font-family: 'Roboto'
-    line-height: 2
+    line-height: 1.6
 
 ul 
     list-style: none
-h1
+h1, h2, h3, h4, h5
     color: $corPrimaria
 nav
     width: 100%
@@ -54,14 +54,6 @@ nav
     margin-left: 5%
     margin-right: 5%
 
-.flex
-    display: flex
-    width: 100%
-
-.f-row
-    flex-direction: row
-
-    
 .item-galeria
     margin-right: 20px
     margin-left: 20px
@@ -73,6 +65,55 @@ nav
         box-shadow: 0 0 10px #bcbcbc
         padding: 5px
 
+.item-group
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    align-items: flex-start
+
+.item
+    border: 1px solid #cecece
+    border-radius: 4px
+    margin-bottom: 5px
+    max-width: 300px
+    height: 500px
+
+    .item-img
+        border-bottom: 2px solid $corPrimaria
+        img
+            width: 100%
+            height: 350px
+    
+    .item-body
+        padding: 25px
+
+.rodape
+    margin-top: 50px
+    padding: 50px
+
+.m-1
+    margin: 20px
+
+.p-1
+    padding: 20px
+
+.flex
+    display: flex
+    width: 100%
+
+.f-row
+    flex-direction: row
+
+.f-column
+    flex-direction: column
+
+.bg-primary
+    background-color: $corPrimaria
+
+.bg-secondary
+    background-color: $corSecundaria
+
 .text-center
     text-align: center
     color: $corPrimaria
@@ -80,3 +121,6 @@ nav
 
 .align-center
     justify-content: center
+
+.shadow 
+    box-shadow: 0 0 5px #cecece
