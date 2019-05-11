@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Entre em contato conosco!!</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><a href="index.html"><img src="imagens/Logo.png" alt=""></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="participantes.html">Participantes</a></li>
+            <li><a href="descarte.html">Como e onde descartar?</a></li>
+        </ul>
+    </nav>
+    <div class="corpo">
+        <div class="container">
+            <div class="text-center">
+                <h1>Tem alguma duvida? Envie-nos um e-mail</h1>
+            </div>
+            <form class="form-contato" action="mailto:edu.nascimento22@outlook.com">
+                <label>E-mail</label>
+                <input type="email" name="email" placeholder="Ex.: exemplo@exemplo.com" required="required">
+                <label>Assunto</label>
+                <input type="text" name="subject" placeholder="Ex.: Como posso participar da equipe?" required="required">
+                <label></label>
+                <textarea name="body" cols="100" rows="10" placeholder="Por que está nos contatando?" required="required" minlength="10"></textarea>
+                <input type="submit" class="btn" value="Enviar e-mail">
+            </form>
+        </div>
+    </div>
+    <div class="rodape shadow">
+        <h3>Ecoworld <br> <small>Fazendo a diferença no mundo.</small></h3>  
+    </div>
+</body>
+</html>
